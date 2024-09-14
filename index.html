@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>LinkedIn PDF to HTML Resume</h1>
+        <div class="input-group">
+            <label for="api-key">Enter OpenAI API Key:</label>
+            <input type="text" id="api-key" placeholder="Your OpenAI API key" required>
+        </div>
+        <div class="input-group">
+            <label for="pdf-file">Upload LinkedIn PDF:</label>
+            <input type="file" id="pdf-file" accept="application/pdf" required>
+        </div>
+        <button id="generate-btn">Generate HTML Resume</button>
+        <div id="output"></div>
+        <div id="resume-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
